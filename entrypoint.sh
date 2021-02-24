@@ -10,8 +10,8 @@ rm /home/container/steamcmd.tar.gz
 ./steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/container/app +app_update 376030 +quit
 
 # link important folders
-ln -s /home/container/app/ShooterGame/Saved /data/saved
-ln -s /home/container/app/ShooterGame/Content/Mods /data/mods
+ln -sf /home/container/app/ShooterGame/Saved /data/saved
+ln -sf /home/container/app/ShooterGame/Content/Mods /data/mods
 
 # run the Server
 eval /home/container/app/ShooterGame/Binaries/Linux/ShooterGameServer
