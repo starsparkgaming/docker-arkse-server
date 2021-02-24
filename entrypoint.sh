@@ -11,7 +11,6 @@ rm /home/container/steamcmd.tar.gz
 
 # link important folders
 ln -s /home/container/app/ShooterGame/Saved /data/saved
-ln -s /home/container/app/ShooterGame/Saved/Config /data/config
 ln -s /home/container/app/ShooterGame/Content/Mods /data/mods
 
 # run the Server
