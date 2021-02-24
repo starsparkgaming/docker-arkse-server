@@ -9,7 +9,11 @@ rm /home/container/steamcmd.tar.gz
 # install steamm app with steamcmd
 ./steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/container/app +app_update 376030 +quit
 
-# link important folders
+# make required directories
+mkdir -p /home/container/app/ShooterGame/Saved
+mkdir -p /home/container/app/ShooterGame/Content/Mods
+
+# link important directories
 ln -sf /home/container/app/ShooterGame/Saved /data/saved
 ln -sf /home/container/app/ShooterGame/Content/Mods /data/mods
 
