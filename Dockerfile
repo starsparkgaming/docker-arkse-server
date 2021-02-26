@@ -5,7 +5,6 @@ RUN         dpkg --add-architecture i386 \
             && apt upgrade -y \
             && apt install -y tar curl lib32gcc1 libgcc1 ca-certificates \
             && useradd -m -d /home/container container \
-			&& mkdir /data \
 
 USER        container
 ENV         HOME /home/container

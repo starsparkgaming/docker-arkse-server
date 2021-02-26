@@ -1,5 +1,6 @@
 #!/bin/bash
 cd /home/container
+
 ## download and install steamcmd
 mkdir /home/container/steamcmd
 curl -SL -o steamcmd.tar.gz "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz"
