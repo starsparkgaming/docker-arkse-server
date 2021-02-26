@@ -10,7 +10,5 @@ USER        container
 ENV         HOME /home/container
 WORKDIR     /home/container
 
-VOLUME /home/container/app/ShooterGame/Saved
-
 COPY        ./entrypoint.sh /entrypoint.sh
 CMD         ["/bin/bash", "/entrypoint.sh"]
