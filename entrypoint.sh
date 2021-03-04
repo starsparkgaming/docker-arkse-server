@@ -11,4 +11,5 @@ rm /home/container/steamcmd.tar.gz
 ./steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/container/app +app_update 376030 +quit
 
 # run the Server
-eval /home/container/app/ShooterGame/Binaries/Linux/ShooterGameServer
+eval /home/container/app/ShooterGame/Binaries/Linux/ShooterGameServer \
+  "$MAP"?listen?SessionName="$NAME"?ServerPassword="$PASSWORD"?ServerAdminPassword="$ADMINPASSWORD" -server -log
